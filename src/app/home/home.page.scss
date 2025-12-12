@@ -16,9 +16,23 @@
   font-size: 16px;
   line-height: 22px;
   color: #8c8c8c;
-  margin: 0;
+  margin: 0 0 10px 0;
+}
+
+#container code {
+  background-color: #f4f4f4;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: monospace;
 }
 
 #container a {
   text-decoration: none;
+}
+
+#container ion-button {
+  margin-top: 30px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
