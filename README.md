@@ -108,7 +108,7 @@ npx cap run android
 
 - **Angular 21** - Web framework
 - **Ionic 8** - UI component library
-- **Capacitor 6** - Native runtime for building cross-platform apps
+- **Capacitor 8** - Native runtime for building cross-platform apps
 
 ## Additional Resources
 
