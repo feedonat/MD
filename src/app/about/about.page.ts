@@ -5,12 +5,12 @@ import { HeaderComponent } from '../components/header.component';
 import { TitleService } from '../services/title.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-about',
+  templateUrl: 'about.page.html',
+  styleUrls: ['about.page.scss'],
   imports: [IonContent, IonButton, HeaderComponent],
 })
-export class HomePage implements OnInit {
+export class AboutPage implements OnInit {
   private titleService = inject(TitleService);
   private router = inject(Router);
 
@@ -18,11 +18,11 @@ export class HomePage implements OnInit {
   pageTitle = this.titleService.title;
 
   ngOnInit() {
-    // Set the page title when the page initializes
-    this.titleService.setTitle('MD - Ionic & Capacitor');
+    // Set a different title for this page
+    this.titleService.setTitle('About');
   }
 
-  goToAbout() {
-    this.router.navigate(['/about']);
+  goHome() {
+    this.router.navigate(['/home']);
   }
 }

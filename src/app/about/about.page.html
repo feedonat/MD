@@ -1,0 +1,28 @@
+<!-- Example of using HeaderComponent with TitleService -->
+<app-header [title]="pageTitle()" [translucent]="false" />
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <h2>About This App</h2>
+    <p>This is an example page demonstrating the reusable header component.</p>
+    
+    <h3>HeaderComponent Features:</h3>
+    <ul>
+      <li>Standalone component - can be used anywhere</li>
+      <li>Accepts <code>title</code> input for dynamic titles</li>
+      <li>Accepts <code>translucent</code> input (this page has it disabled)</li>
+      <li>Integrates seamlessly with TitleService</li>
+    </ul>
+
+    <h3>TitleService Features:</h3>
+    <ul>
+      <li>Manages page titles using Angular signals</li>
+      <li>Reactive updates across components</li>
+      <li>Simple API: <code>setTitle()</code> and <code>getTitle()</code></li>
+    </ul>
+
+    <ion-button (click)="goHome()" expand="block">
+      Back to Home
+    </ion-button>
+  </div>
+</ion-content>
